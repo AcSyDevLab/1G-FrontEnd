@@ -1,8 +1,111 @@
+aqua = #0AF
+azul = #00F
+azul_oscuro = #00D
+blanco = white
+gris = #444
+gris_claro = #DDD
+gris_negro = #222
+gris_oscuro = #333
+
 a
-	color: #FA0
+	color azul
+
+a:visited
+	color azul_oscuro
 
 body
-	background: #444
-	color: #ddd
-	font-family: Arial
-	font-size: 18px
+	color texto
+	font-family "Arial"
+	font-size 16px
+	text-align left
+
+header
+	background gris_oscuro
+	border-bottom 3px solid aqua
+	color gris_claro
+	margin 0
+	padding 0.5em
+	position fixed
+	width 100%
+
+	img
+		border-radius 50%
+		width 100%
+
+	h1
+		font-size 20px
+		font-weight normal
+		margin 3px
+		padding 0
+
+	#avatar, #logo, #titulo_nav
+		display inline-block
+		vertical-align top
+
+	#avatar, #logo
+		width 50px
+		height 50px
+
+	#avatar a
+		background gris
+		border-radius 50%
+		display block
+		margin 0
+		padding 3px
+		text-decoration none
+
+	#titulo_nav
+		width 70%
+		margin-left 12px
+
+		nav a
+			color blanco
+			border-bottom 4px solid aqua
+			border-left 1px solid aqua
+			border-right 1px solid aqua
+			font-size 0.8em
+			padding 0.1em 1em
+			text-decoration none
+
+		nav a:hover
+			border-color blanco
+
+#contenido
+	padding 4.5em 0.5em
+
+	.item
+		border 2px solid gris_claro
+		border-radius 0.5em
+		height 4em
+		margin-top 0.5em
+		padding 0.5em
+
+		h2
+			font-size 16px
+			margin 0
+			padding 0
+
+		.autor
+			font-size 0.7em
+			margin -3em 0 0 15%
+
+			p 
+				display inline
+
+		.titulo_item, .votos
+			display inline-block
+			vertical-align top
+
+		.titulo_item
+			width 80%
+
+			figure
+				float right
+
+				img
+					width 70px
+					height 70px
+
+		.votos
+			text-align center
+			width 14%
