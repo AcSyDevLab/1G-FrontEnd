@@ -75,3 +75,31 @@ grunt.registerTask('server', [
 
 
 command: grunt server
+
+
+
+asset rojo en la pestaña network = document ready de jquery
+pageSpeed pagina web de google para optimizar las web
+WhySlow de yahoo
+
+fuentes personalizadas
+fontsquirrel
+googlefonts todas las fuentes tienen tildes
+adobe web fonts -> necesitas tener adobe edge code
+typekit -> gratis hasta 25mil paginas al mes
+
+las fuentes se insertan despues de normalize y antes de estilos
+
+iconos como imagenes
+icomoon.io son 100% vectoriales
+
+fuentes SVG safari mobile
+EOT Internet Explorer
+TTF navegadores viejos
+WOFF chrome, opera e IE 9 y 10
+
+aria-hidden="true" en el span para esconderlo de los lectores (talkback en iphone)
+
+En el CSS los ids se colocan por encima de las clases
+
+

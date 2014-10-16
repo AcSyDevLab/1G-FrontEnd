@@ -1,26 +1,67 @@
 aqua = #0AF
-azul = #00F
-azul_oscuro = #00D
 blanco = white
 gris = #444
 gris_claro = #DDD
 gris_negro = #222
 gris_oscuro = #333
+link = #5BA7B5
+link_visited = #41828D
+
+@font-face
+	font-family 'icomoon'
+	src url('../fonts/icomoon.eot?-i15x1p')
+	src url('../fonts/icomoon.eot?#iefix-i15x1p') format('embedded-opentype'), url('../fonts/icomoon.woff?-i15x1p') format('woff'), url('../fonts/icomoon.ttf?-i15x1p') format('truetype'), url('../fonts/icomoon.svg?-i15x1p#icomoon') format('svg')
+	font-weight normal
+	font-style normal
+
+[class^="icon-"], [class*=" icon-"]
+	font-family 'icomoon'
+	speak none
+	font-style normal
+	font-weight normal
+	font-variant normal
+	text-transform none
+	line-height 1
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+
+.icon-star:before
+	content "\e600"
+
+.icon-star2:before
+	content "\e601"
+
+.icon-thumbs-up:before
+	content "\e602"
+
+.icon-thumbs-up2:before
+	content "\e603"
 
 a
-	color azul
+	color link
 
 a:visited
-	color azul_oscuro
+	color link_visited
+
+::-moz-selection
+	background #919481
+	text-shadow none
+
+::selection
+	background #919481
+	text-shadow none
 
 body
-	color texto
-	font-family "Arial"
+	background #B0D0CA
+	color gris_oscuro
+	font-family 'Oswald', sans-serifd
 	font-size 16px
 	text-align left
 
 header
-	background gris_oscuro
+	background #31414D
 	border-bottom 3px solid aqua
 	color gris_claro
 	margin 0
@@ -34,6 +75,7 @@ header
 
 	h1
 		font-size 20px
+		font-family: 'Shadows Into Light', cursive;
 		font-weight normal
 		margin 3px
 		padding 0
@@ -55,7 +97,7 @@ header
 		text-decoration none
 
 	#titulo_nav
-		width 70%
+		width 65%  // RESPONSIVE
 		margin-left 12px
 
 		nav a
@@ -71,13 +113,29 @@ header
 			border-color blanco
 
 #contenido
-	padding 4.5em 0.5em
+	padding 6em 0.5em
+
+	#nota
+		background #FAFAD6
+		border-radius 1em
+		display block
+		font-size 0.7em
+		height 1em
+		margin 1em
+		overflow hidden
+		padding 2em
+		text-align justify
+		transition all 0.5s ease
+
+	#nota:hover
+		height 8em
 
 	.item
+		background blanco
 		border 2px solid gris_claro
 		border-radius 0.5em
-		height 4em
 		margin-top 0.5em
+		overflow hidden
 		padding 0.5em
 
 		h2
@@ -91,6 +149,29 @@ header
 
 			p 
 				display inline
+
+				.icon-star
+					color #F1B425
+					margin 4px
+					font-size 1.4em
+					vertical-align middle
+					cursor pointer
+
+				.icon-star:hover:before
+					content "\e601"
+
+			.tag 
+				background #345846
+				border-radius 0.7em
+				color blanco
+				cursor pointer
+				display inline-block
+				font-weight bold
+				padding 0.5em
+				margin 0 1em 2px 1em
+
+			.tag:hover
+				background #1E3720
 
 		.titulo_item, .votos
 			display inline-block
@@ -109,3 +190,18 @@ header
 		.votos
 			text-align center
 			width 14%
+
+			a 
+				text-decoration none
+				transition all 0.5s ease
+
+			a:hover
+				font-size 1.3em
+
+			.down
+				color #DA5123
+
+			.up 
+				color #329B0F
+
+@import "responsive.styl"
